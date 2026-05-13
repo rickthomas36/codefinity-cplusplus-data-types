@@ -1,0 +1,15 @@
+#include <iostream>
+
+long int calculateEnergyConsumption() {
+    short averageConsumption = 27;     
+    long cityPopulation = 350000000;
+
+    long totalConsumption = (long) averageConsumption * cityPopulation;
+
+    return totalConsumption;
+}
+
+int main() {
+    std::cout << "Total daily energy consumption: " << calculateEnergyConsumption() << " kWh" << std::endl;
+    return 0;
+}
